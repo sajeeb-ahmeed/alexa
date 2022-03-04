@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALEXA</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h1 {
+            text-align: center;
+
+        }
+
+        body {
+            background: rgb(253, 243, 223);
+        }
+
+        .container {
+            margin: 0 auto;
+            text-align: center;
+            border: 2px solid green;
+            box-shadow: 4px 6px 10px 5px black;
+            width: 400px;
+            height: 400px;
+            background: white;
+            padding: 40px;
+        }
+
+        .container:hover {
+            box-shadow: 4px 6px 10px 5px rgb(10, 39, 134);
+        }
+
+        i {
+            color: blueviolet;
+            font-size: 2rem;
+            border: 1px solid gold;
+            border-radius: 50%;
+            padding: 10px;
+            transition: background 0.5s;
+        }
+
+        i:hover {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+
+        h4 {
+            color: blueviolet;
+            font-size: 1.4rem;
+        }
+
+        h5 {
+            color: rgb(86, 9, 109);
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Meet My Personal ALEXA </h1>
+        <i onclick="recognization.start()" class="fa-solid fa-microphone"></i>
+        <script src="index.js"></script>
+        <h4 id="result">Me: </h4>
+        <h5 id="r">Alexa: </h5>
+
+    </div>
+</body>
+
+</html>
